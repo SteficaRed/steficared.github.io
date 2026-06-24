@@ -91,18 +91,6 @@ auto,
 auto;
 }
 
-.hero::after {
-content: "μ  σ  x̄  p(x)  β  Σ  N(μ,σ²)  y = β0 + β1x";
-position: absolute;
-bottom: 24px;
-left: 50%;
-transform: translateX(-50%);
-color: rgba(255,255,255,0.14);
-font-size: 14px;
-letter-spacing: 4px;
-white-space: nowrap;
-}
-
 .hero-content {
 position: relative;
 z-index: 1;
@@ -138,23 +126,6 @@ font-size: 20px;
 color: #fff7f8;
 }
 
-.hero-tags {
-display: flex;
-justify-content: center;
-gap: 10px;
-flex-wrap: wrap;
-margin-bottom: 34px;
-}
-
-.hero-tags span {
-padding: 7px 13px;
-border-radius: 999px;
-border: 1px solid rgba(255,255,255,0.28);
-background: rgba(255,255,255,0.09);
-color: #ffe9ef;
-font-size: 13px;
-font-weight: 700;
-}
 
 .hero-buttons a {
 display: inline-block;
