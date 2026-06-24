@@ -12,6 +12,22 @@
 
 <body>
 
+  <nav class="navbar">
+    <div class="nav-logo">SteficaRed</div>
+
+```
+<div class="nav-links">
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#experience">Experience</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</div>
+```
+
+  </nav>
+
   <header class="hero">
     <div class="hero-content">
       <p class="eyebrow">Data Science Portfolio</p>
@@ -19,13 +35,21 @@
 ```
   <h1>Stefanija Ivošević</h1>
 
-  <h2>Aspiring Data Scientist | MSc Student in Information Engineering</h2>
+  <h2>Junior Data Scientist | MSc Student in Information Engineering</h2>
 
   <p>
-    Just a curious girl from Belgrade who fell in love with Data Science.
+    A curious girl from Belgrade who fell in love with Data Science.
     I am fascinated by patterns, models, hidden structure in data and the
-    way careful analysis can turn complex information into reliable insight.
+    way thoughtful analysis can turn complex information into reliable insight.
   </p>
+
+  <div class="hero-tags">
+    <span>Statistics</span>
+    <span>Machine Learning</span>
+    <span>Big Data</span>
+    <span>Python</span>
+    <span>Data Storytelling</span>
+  </div>
 
   <div class="hero-buttons">
     <a href="#projects">View Projects</a>
@@ -39,7 +63,7 @@
   <main>
 
 ```
-<section class="about">
+<section id="about" class="about">
   <h2>About Me</h2>
 
   <div class="about-layout">
@@ -209,45 +233,45 @@
   </div>
 </section>
 
-<section class="education">
+<section id="education" class="education">
   <h2>Education</h2>
 
   <div class="info-card">
     <h3>MSc in Information Engineering</h3>
-    <p>
+    <p class="card-subtitle">
       Faculty of Organizational Sciences, University of Belgrade
     </p>
     <p>
-      <strong>Status:</strong> MSc student, all exams completed with the highest grade, 10.0
+      <strong>Status:</strong> MSc student, all exams completed with the highest grade, 10.0.
     </p>
     <p>
       <strong>Relevant courses:</strong> Development of Machine Learning Algorithms,
       Application of Machine Learning Algorithms, Machine Learning on Big Data,
       Mathematical Foundations of Data Science, Data-Oriented Software Development,
-      Applied Analytics
+      Applied Analytics.
     </p>
   </div>
 
   <div class="info-card">
     <h3>BSc in Statistics, Actuarial and Financial Mathematics</h3>
-    <p>
+    <p class="card-subtitle">
       Faculty of Mathematics, University of Belgrade
     </p>
     <p>
       <strong>Relevant courses:</strong> Probability Theory, Mathematical Statistics,
       Regression Analysis, Linear Statistical Models, Time Series, Random Processes,
       Stochastic Processes in Operations Research, Sampling Methods, Information Theory,
-      Statistical Software I-IV, Elements of Actuarial Mathematics, Operations Research
+      Statistical Software I-IV, Elements of Actuarial Mathematics, Operations Research.
     </p>
   </div>
 </section>
 
-<section class="experience">
+<section id="experience" class="experience">
   <h2>Experience</h2>
 
   <div class="info-card">
     <h3>Survey Analyst</h3>
-    <p>
+    <p class="card-subtitle">
       Statistical Office of the Republic of Serbia | Sampling Methodology Group
     </p>
     <p>
@@ -261,7 +285,7 @@
 
   <div class="info-card">
     <h3>ERP Developer</h3>
-    <p>
+    <p class="card-subtitle">
       NPS - A Noventiq Company
     </p>
     <p>
@@ -274,7 +298,7 @@
 
   <div class="info-card">
     <h3>Mathematics and Informatics Teacher</h3>
-    <p>
+    <p class="card-subtitle">
       Primary and Secondary Schools
     </p>
     <p>
@@ -286,24 +310,119 @@
   </div>
 </section>
 
-<section class="skills">
+<section id="skills" class="skills">
   <h2>Skills</h2>
 
   <div class="skills-grid">
-    <span>Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn)</span>
-    <span>Machine Learning (classification, regression, clustering, ensembles)</span>
-    <span>Model Evaluation (train/test split, cross-validation, metrics, interpretation)</span>
-    <span>Deep Learning (neural networks, PyTorch, model robustness)</span>
-    <span>NLP (text preprocessing, feature extraction, sentiment analysis)</span>
-    <span>Big Data (Spark, PySpark, Spark SQL, Spark ML)</span>
-    <span>SQL (queries, joins, aggregation, data analysis)</span>
-    <span>Statistics (probability, inference, regression, sampling)</span>
-    <span>R (data analysis, statistical modeling, visualization)</span>
-    <span>SAS (data preparation, survey methodology, reporting)</span>
-    <span>Excel (data cleaning, analysis, pivot tables, reporting)</span>
-    <span>Visualization (Tableau, Power BI, dashboards)</span>
-    <span>Git & GitHub (version control, repositories, portfolio publishing)</span>
-    <span>Data Science Workflow (cleaning, EDA, modeling, interpretation)</span>
+
+    <div class="skill-card">
+      <h3>Python</h3>
+      <p>
+        Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, data cleaning,
+        exploratory data analysis, feature engineering, model training and
+        model evaluation.
+      </p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Machine Learning</h3>
+      <p>
+        Classification, regression, clustering, ensemble methods, Naive Bayes,
+        Linear Regression, KMeans, AdaBoost, train/test split, cross-validation,
+        hyperparameter tuning, metrics and interpretation.
+      </p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Statistics</h3>
+      <p>
+        Probability theory, statistical inference, regression analysis,
+        linear statistical models, sampling methods, weighting, estimation,
+        confidence intervals, time series and stochastic processes.
+      </p>
+    </div>
+
+    <div class="skill-card">
+      <h3>R</h3>
+      <p>
+        dplyr, tidyr, ggplot2, haven, lubridate, cluster, factoextra,
+        SamplingStrata, sampling, data manipulation, statistical analysis,
+        visualization and reporting.
+      </p>
+    </div>
+
+    <div class="skill-card">
+      <h3>SQL</h3>
+      <p>
+        SELECT queries, filtering, joins, grouping, aggregation, subqueries,
+        common table expressions, data validation, analytical reporting and
+        working with relational data.
+      </p>
+    </div>
+
+    <div class="skill-card">
+      <h3>SAS</h3>
+      <p>
+        PROC IMPORT, PROC SQL, PROC SUMMARY, data step processing,
+        data preparation, survey methodology support, sample-based analysis
+        and official statistical reporting.
+      </p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Big Data</h3>
+      <p>
+        Spark, PySpark, Spark DataFrames, Spark SQL, Spark ML, distributed
+        data processing, large-scale data transformation and machine learning
+        workflows on bigger datasets.
+      </p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Deep Learning</h3>
+      <p>
+        Neural network concepts, model training, model robustness, point cloud
+        data, RGB-D data, introductory PyTorch workflows and understanding of
+        deep learning models used in robotic grasp detection.
+      </p>
+    </div>
+
+    <div class="skill-card">
+      <h3>NLP</h3>
+      <p>
+        Text preprocessing, tokenization, feature extraction, TF-IDF,
+        sentiment analysis, text classification and working with unstructured
+        textual data.
+      </p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Data Visualization</h3>
+      <p>
+        Matplotlib, Seaborn, ggplot2, Excel charts, Tableau and Power BI for
+        exploratory visualization, dashboards and communication of analytical
+        results.
+      </p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Data Science Workflow</h3>
+      <p>
+        Problem understanding, data cleaning, exploratory data analysis,
+        feature engineering, modeling, evaluation, interpretation and clear
+        communication of results.
+      </p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Tools</h3>
+      <p>
+        Git, GitHub, Jupyter Notebook, Spyder, VS Code, Excel, Tableau,
+        Power BI and basic software implementation experience from ERP
+        development.
+      </p>
+    </div>
+
   </div>
 </section>
 
