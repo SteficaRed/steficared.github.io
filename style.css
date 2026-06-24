@@ -303,3 +303,111 @@ footer {
     padding: 24px;
   }
 }
+/* ABOUT ME STORY LAYOUT */
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.about-photo-wrap {
+  position: sticky;
+  top: 30px;
+  text-align: center;
+}
+
+.profile-photo {
+  width: 100%;
+  max-width: 240px;
+  border-radius: 24px;
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.22);
+  object-fit: cover;
+}
+
+.about-text {
+  max-width: 760px;
+}
+
+.about-text p {
+  font-size: 17px;
+  line-height: 1.75;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.about-text p:first-of-type {
+  font-size: 18px;
+  background-color: #f9fafb;
+  border-left: 5px solid #374151;
+  padding: 18px;
+  border-radius: 12px;
+}
+
+/* SMALL VISUAL UPGRADE */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  top: -100px;
+  right: -80px;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  bottom: -70px;
+  left: -60px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.project-card,
+.info-card,
+.about,
+.contact {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover,
+.info-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.12);
+}
+
+/* MOBILE VERSION */
+
+@media (max-width: 768px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .about-photo-wrap {
+    position: static;
+  }
+
+  .profile-photo {
+    max-width: 220px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+  }
+}
